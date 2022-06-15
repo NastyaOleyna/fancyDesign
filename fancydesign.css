@@ -85,79 +85,77 @@ a:hover {
     width: 100%;
     align-items: center;
     justify-content: flex-start;
-    /* background-color: grey; */
     flex-direction: row-reverse;
 
 }
 
-/* .findBlock {
+.findBlock {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     background-color: transparent;
-    height: 70px;
-    width: 600px;
+    height: 80px;
+    width: 80px;
     margin-right: 5%;
     flex-direction: row-reverse;
     padding-right: 0;
-} */
+    border-radius: 4px;
+    transition: all ease 400ms;
+
+}
+
 
 .find {
     align-items: center;
     justify-content: flex-end;
-    height: 70px;
-    width: 70px;
+    height: 80px;
+    width: 80px;
     display: flex;
-    margin-right: 5%;
     cursor: pointer;
     position: relative;
+    transition: all ease 400ms;
+    border-radius: 4px;
+    margin-top: 10px;
 
 
-    /* background-color: white; */
+    background-color: transparent;
 
 
 }
 
+.findBlock:hover {
+    background-color: rgba(174, 177, 170, 0.5);
+    width: 500px;
+    height: 70px;
+}
+
 .input {
-    width: 170px;
+    width: 0px;
+    overflow: hidden;
     transition: width ease 300ms;
-    /* background-color: yellow; */
     height: 70px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    /* opacity: 0% */
-    /* flex-direction: row-reverse; */
+    position: absolute;
+    margin-right: 80px;
 
 
 }
 
 input:hover {
-    background-color: rgba(174, 177, 170, 0.5);
-    padding-left: 50px;
-    padding-right: 50px;
-    color: white;
-    position: absolute;
+    background-color: transparent;
     right: 0;
 
 }
 
-/* .find:hover {
-    // background-color: rgba(174, 177, 170, 0.5);
-    height: 70px;
-    width: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-} */
 
 .find:hover+.input,
 .input:hover {
-    width: 170px;
-    height: 80px;
+
     display: flex;
     align-items: center;
-    background-color: rgba(174, 177, 170, 0.5);
+    background-color: transparent;
     height: 60px;
     width: 400px;
     border-radius: 4px;
@@ -165,19 +163,20 @@ input:hover {
 }
 
 input {
-    background-color: yellow;
+    background-color: transparent;
     display: block;
     right: 100px;
     margin: 0;
     padding: 0;
     height: 50px;
-    width: 100%;
+    width: 400px;
     border: none;
     outline: none;
     border-radius: 4px;
     font-size: 20px;
-    opacity: 0;
-
+    color: white;
+    font-family: 'century', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 1px;
 }
 
 
