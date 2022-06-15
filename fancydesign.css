@@ -1,0 +1,449 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0%;
+    margin: 0%;
+}
+
+.intro {
+
+    background-image: url('./images/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding-top: 3%;
+
+
+}
+
+.navigation {
+    /* background-color: black; */
+    align-items: center;
+    justify-content: flex-end;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+
+}
+
+.navigationIcon {
+    height: 70px;
+    width: 70px;
+    /* background-color: grey; */
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: all ease 400ms;
+    cursor: pointer;
+    overflow: hidden;
+    flex-direction: row-reverse;
+    padding-right: 0;
+    transition: all ease 400ms;
+}
+
+.navigationIcon:hover {
+    background-color: rgba(174, 177, 170, 0.5);
+    border-radius: 4px;
+    height: 60px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding-left: 60px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    opacity: 0%;
+    font-family: 'century', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+
+}
+
+.navigationIcon:hover a {
+    opacity: 100%;
+}
+
+a:hover {
+
+
+    height: 25px;
+
+}
+
+
+.searchBlock {
+    display: flex;
+    height: 70px;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    /* background-color: grey; */
+    flex-direction: row-reverse;
+
+}
+
+/* .findBlock {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: transparent;
+    height: 70px;
+    width: 600px;
+    margin-right: 5%;
+    flex-direction: row-reverse;
+    padding-right: 0;
+} */
+
+.find {
+    align-items: center;
+    justify-content: flex-end;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    margin-right: 5%;
+    cursor: pointer;
+    position: relative;
+
+
+    /* background-color: white; */
+
+
+}
+
+.input {
+    width: 170px;
+    transition: width ease 300ms;
+    /* background-color: yellow; */
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* opacity: 0% */
+    /* flex-direction: row-reverse; */
+
+
+}
+
+input:hover {
+    background-color: rgba(174, 177, 170, 0.5);
+    padding-left: 50px;
+    padding-right: 50px;
+    color: white;
+    position: absolute;
+    right: 0;
+
+}
+
+/* .find:hover {
+    // background-color: rgba(174, 177, 170, 0.5);
+    height: 70px;
+    width: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+} */
+
+.find:hover+.input,
+.input:hover {
+    width: 170px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(174, 177, 170, 0.5);
+    height: 60px;
+    width: 400px;
+    border-radius: 4px;
+
+}
+
+input {
+    background-color: yellow;
+    display: block;
+    right: 100px;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-size: 20px;
+    opacity: 0;
+
+}
+
+
+
+
+.logo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+}
+
+
+
+
+.main {
+    background-color: white;
+
+
+}
+
+.lineWhite {
+    background-color: white;
+    height: 5px;
+    width: 100%;
+    border: 0;
+}
+
+.lineGreen {
+    background-color: #262B1A;
+    height: 17px;
+    width: 100%;
+    border: 0;
+}
+
+.terraceBlock {
+    background-color: #262B1A;
+    width: 100%;
+    text-align: center;
+
+}
+
+.FancyDesign {
+    background-color: none;
+    display: block;
+    padding-top: 30px;
+    color: white;
+    font-size: 130px;
+    border-bottom: 10px solid white;
+    font-family: 'century', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.column {
+    width: 50%;
+    background-color: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 40px;
+    padding-bottom: 30px;
+    padding-bottom: 200px;
+    position: relative;
+}
+
+.column:last-of-type {
+    justify-content: flex-start;
+    padding-left: 60px;
+}
+
+.block {
+    display: flex;
+    padding-top: 100px;
+    border-bottom: 10px solid white;
+
+
+}
+
+.block:nth-of-type(2n) .column:last-of-type {
+    order: -1;
+    justify-content: flex-end;
+    padding-right: 40px;
+
+}
+
+.block:nth-of-type(2n) .column:first-of-type {
+    justify-content: flex-start;
+    padding-left: 60px;
+
+}
+
+.terrace {
+    height: 400px;
+    width: 500px;
+    object-fit: cover;
+    position: relative;
+    top: -80px;
+
+
+
+}
+
+.greyBlock {
+    background-color: rgba(255, 255, 255, 0.15);
+    height: 440px;
+    width: 640px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+
+
+}
+
+.frame {
+    border: 5px solid white;
+    padding: 45px;
+    margin-top: 80px;
+}
+
+.lineFat {
+    background-color: white;
+    height: 30px;
+    width: 100%;
+}
+
+.little {
+    /* position: absolute; */
+    background-color: #938A85;
+    border: none;
+    height: 60px;
+    width: 180px;
+    font-family: 'century', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    color: white;
+    transform: translateY(50%);
+    cursor: pointer;
+}
+
+
+.title {
+    color: white;
+    font-family: 'century', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    margin-top: 30px;
+
+}
+
+.mainText {
+    color: white;
+    font-family: 'Centaur', 'century', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    font-weight: 100;
+    line-height: 34px;
+}
+
+.big {
+    background-color: #767870;
+    height: 100px;
+    width: 350px;
+    border: none;
+    font-family: 'century', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 35px;
+    color: white;
+    transform: translateY(50%);
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    left: 80%;
+}
+
+.whiteBlock {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 1000px;
+}
+
+.designers {
+    font-size: 90px;
+    font-family: 'century', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #262B1A;
+    margin-top: 100px;
+    position: absolute;
+}
+
+.designersBlocks {
+    background-color: none;
+    background-position: center center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding-left: 350px;
+    padding-right: 350px;
+    /* opacity: 70%; */
+
+}
+
+.designer {
+    height: 240px;
+    width: 210px;
+    object-fit: cover;
+}
+
+#Main {
+    height: 300px;
+    width: 230px;
+    transform: translateY(-17%);
+
+}
+
+.frameLast {
+    height: 320px;
+    width: 360px;
+    border: 1px solid #262B1A;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /* opacity: 100%; */
+}
+
+.Name {
+    position: absolute;
+    bottom: 30px;
+    font-size: 30px;
+    font-family: 'century', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #262B1A;
+
+}
+
+.bottom {
+    height: 200px;
+    width: 100%;
+    background-color: #262B1A;
+    border-top: 15px solid white;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.SM {
+    background-color: none;
+    height: 100px;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-position: center center;
+}
+
+.contacts {
+    background-color: none;
+    height: 100px;
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    font-family: 'century', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white
+}
